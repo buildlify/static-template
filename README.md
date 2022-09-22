@@ -17,6 +17,7 @@
 - For every page import `<Layout title=''>` for meta
 - Use `<Image />` component for all images used
 - Use [Hero Icons](https://heroicons.com/) for every icon and SVG
+- Design mobile first and use responsive design tool
 
 ## Resources
 
