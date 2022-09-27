@@ -10,7 +10,7 @@
 8. Open `/layouts/Layout.astro` and update tags
 9. Create `/og-image` file and put in public folder `/images` (1200 x 637)
 10. Link fonts in `/layouts/Layout.astro` using `<link rel="preconnect" href="font link">`
-11. Configure Tailwind config file `/tailwind.config.cjs`
+11. Customize Tailwind config file `/tailwind.config.cjs`
 
 ## Reminders
 
@@ -31,7 +31,7 @@
 | Command             | Action                                             |
 | :------------------ | :------------------------------------------------- |
 | `yarn install`      | Installs dependencies                              |
-| `yarn dev`          | Starts local dev server at `localhost:3000`        |
+| `yarn dev`          | Starts local dev server at `localhost:3000` and on network       |
 | `yarn build`        | Build your production site to `./dist/`            |
 | `yarn preview`      | Preview your build locally, before deploying       |
 | `yarn astro ...`    | Run CLI commands like `astro add`, `astro preview` |

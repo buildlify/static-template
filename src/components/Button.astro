@@ -1,1 +1,9 @@
-<button class='bg-blue-500'>Test</button>
+---
+export interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<button class="bg-primary rounded-primary m-2 p-5 text-white">{text}</button>
