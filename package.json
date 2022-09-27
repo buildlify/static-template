@@ -14,15 +14,6 @@
     "clean": "rimraf dist",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.js": "eslint --fix"
-  },
-
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "@astrojs/image": "^0.7.0",
     "@astrojs/react": "^1.1.4",
