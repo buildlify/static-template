@@ -11,6 +11,7 @@
 9. Create `/og-image` file and put in public folder `/images` (1200 x 637)
 10. Link fonts in `/layouts/Layout.astro` using `<link rel="preconnect" href="font link">`
 11. Customize Tailwind config file `/tailwind.config.cjs`
+12. Update package.json name and readme info
 
 ## Reminders
 
