@@ -1,16 +1,12 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline/index';
 import { Fragment } from 'react';
 
-const links = [
-  { name: 'Home', href: '#' },
-  { name: 'Link', href: '#' },
-  { name: 'Link', href: '#' },
-  { name: 'Link', href: '#' },
-];
+type Props = {
+  links: { name: string; href: string }[];
+};
 
-const Mobile = () => {
+const Mobile = ({ links }: Props) => {
   return (
     <Popover className="relative flex w-full justify-end sm:hidden">
       <Popover.Button className="focus:outline-none">
@@ -51,22 +47,4 @@ const Mobile = () => {
   );
 };
 
-const Nav = () => {
-  return (
-    <nav>
-      <div className="mx-auto mt-2 hidden w-11/12 items-center justify-between sm:flex">
-        <div>logo</div>
-        <div className="flex gap-8 last:mr-4">
-          {links.map((link) => (
-            <a href={link.href} key={link.name}>
-              {link.name}
-            </a>
-          ))}
-        </div>
-      </div>
-      <Mobile />
-    </nav>
-  );
-};
-
-export default Nav;
+export default Mobile;

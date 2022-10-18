@@ -1,0 +1,20 @@
+---
+import Mobile from './Mobile';
+
+const links = [
+  { name: 'Home', href: '#' },
+  { name: 'Link', href: '#' },
+  { name: 'Link', href: '#' },
+  { name: 'Link', href: '#' },
+];
+---
+
+<nav>
+  <div class="mx-auto mt-2 hidden w-11/12 items-center justify-between sm:flex">
+    <div>logo</div>
+    <div class="flex gap-8 last:mr-4">
+      {links.map((link) => <a href={link.href}>{link.name}</a>)}
+    </div>
+  </div>
+  <Mobile links={links} client:load />
+</nav>
